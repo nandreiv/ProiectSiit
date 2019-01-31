@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="materialize/materialize.min.css">
+
+<title>Shop Lounge - Your favourite shop place</title>
+
+</head>
+
+<body onload="getProduse()">
+
+<!-- NAVBAR -->
+
+<div class="navbar-fixed">
+    <nav class="blue-grey">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Shop Lounge</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#productList">Products</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-light btn  light-blue darken-3" onclick="window.location='cart.html'"><i class="material-icons left">shopping_cart</i>Your Cart</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-light btn  light-blue darken-3" onclick="window.location='admin.html'"><i class="material-icons left">assignment_ind</i>Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#productList">Products</a>
+    </li>
+    <li>
+      <a href="cart.html">Your Cart</a>
+    </li>
+    <li>
+      <a href="admin.html">Admin</a>
+    </li>
+  </ul>
+
+
+<!-- CAROUSEL -->
+
+<section class="slider">
+    <ul class="slides" id="carouselTop">
+      <li>
+        <img src="img/slide1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Want to buy something ?</h2>
+          <h5 class="light hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo earum cumque id est!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slide2.jpg" alt="">
+        <div class="caption left-align">
+          <h2>Just sit back and relax</h2>
+          <h5 class="light hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo earum cumque id est!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slide3.png" alt="">
+        <div class="caption right-align">
+          <h2>Be sure not to miss our sales!</h2>
+          <h5 class="light hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo earum cumque id est!</h5>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<!-- PRODUCT LIST HEADER -->
+
+<div class="container" id="productHeader">
+  <h3 class="black-text">Explore our shop</h3>
+  <hr>
+</div>
+
+<!-- PRODUCT LIST -->
+
+<div class="row section scrollspy" id="productList"></div>
+
+<!-- FOOTER -->
+<footer class="page-footer blue-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5>Contact Us</h5>
+        <hr>
+        <p class="grey-text text-lighten-4">You can contact us anytime on our social media pages or by the details below.</p>
+        <p class="grey-text text-lighten-4">Phone: +40 07xx xxx xxx</p>
+        <p class="grey-text text-lighten-4">Email: office@shop-lounge.com</p>
+        <p class="grey-text text-lighten-4">Monday - Friday : 09:00 - 18:00</p>
+        <p class="grey-text text-lighten-4">Sturday : 09:00 - 12:00</p>
+        <p class="grey-text text-lighten-4">Sunday : Everyone needs some time off :)</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5>Social Media</h5>
+        <hr>
+        <ul id="socialLinks">
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook-f"></i> </a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2019 Copyright
+    </div>
+  </div>
+</footer>
+
+<!-- END -->
+
+<script src="scripts/materialize.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+
+</html>

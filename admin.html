@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="materialize/materialize.min.css">
+
+<title>Shop Lounge - Your favourite shop place</title>
+
+</head>
+
+<body onload="getProduse()">
+
+<!-- NAVBAR -->
+
+<div class="navbar-fixed">
+    <nav class="blue-grey">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Shop Lounge</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-light btn  light-blue darken-3" onclick="window.location='cart.html'"><i class="material-icons left">shopping_cart</i>Your Cart</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-light btn  light-blue darken-3"><i class="material-icons left" onclick="window.location='admin.html'">assignment_ind</i>Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#productList">Products</a>
+    </li>
+    <li>
+      <a href="#cart">Your Cart</a>
+    </li>
+    <li>
+      <a href="#admin">Admin</a>
+    </li>
+  </ul>
+
+<!-- PRODUCT LIST -->
+<div id="addProduct">
+  <div class="container row">
+    <form class="col s12" onsubmit="addProduct(this,event)" id="productForm">
+      <div class="input-field col s12">
+          <input id="prodImagine" name="imagine" type="text" placeholder="Image">
+          <label for="prodImagine">Imagine</label>
+      </div>
+      <div class="input-field col s4">
+          <input id="prodNume" name="nume" type="text" placeholder="Name">
+          <label for="prodNume">Nume</label>
+      </div>
+      <div class="input-field col s4">
+          <input id="prodPret" name="pret" type="text" placeholder="Price">
+          <label for="prodPret">Pret</label>
+      </div>
+      <div class="input-field col s4">
+          <input id="prodCantitate" name="cantitate" type="text" placeholder="Quantity">
+          <label for="prodCantitate">Cantitate</label>
+      </div>
+      <div class="input-field col s12">
+          <input id="prodDescriere" name="descriere" class="materialize-textarea"></input>
+          <label for="prodDescriere">Descriere</label>
+      </div>
+      <input id="submit" type="submit" value="Add Product" class="btn"/>
+    </form>
+  </div>
+</div>
+
+<div class="row" id="adminList">
+  <table class="striped">
+    <thead>
+      <th>Photo</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th><button class="btn light-blue lighten-3" onclick="showAddProduct();"><i class="material-icons">add</i>Add</button></th>
+    </thead>
+    <tbody id="adminProductList">
+
+    </tbody>
+  </table>
+</div>
+
+<!-- END -->
+
+<script src="scripts/materialize.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="scripts/admin.js"></script>
+
+</body>
+
+</html>

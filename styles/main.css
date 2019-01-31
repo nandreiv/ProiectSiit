@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand:300,500,700');
+
+.caption {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.brand-logo {
+  font-family: 'Lobster', sans-serif;
+  font-weight: bold;
+}
+
+.slider {
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 3s; /* Firefox < 16 */
+      -ms-animation: fadein 3s; /* Internet Explorer */
+       -o-animation: fadein 3s; /* Opera < 12.1 */
+          animation: fadein 3s;
+}
+
+.slides h2, .slides h5 {
+  font-weight: 700;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.footer > h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.card {
+  align-items: baseline;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardImg{
+  display: block;
+  max-width:180px;
+  max-height:180px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.card-action {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.card-action p {
+  width: 50%;
+  margin-left: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.card-action button {
+  width: 50%;
+  margin-right: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #0277bd;
+}
+
+.card-action button:hover {
+  background-color: #eeeeee ;
+}
+.imgDetails {
+  max-width:300px;
+  max-height:300px;
+}
+
+.prodDetails {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.prodImg img{
+  float: right;
+}
+
+.prodDetails hr {
+  float: left;
+  width: 30%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.prloader-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+#rowDetails {
+  justify-content: center;
+  align-items: center;
+}
+
+#productHeader h3 {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+#socialLinks {
+  display: flex;
+}
+
+#socialLinks li {
+  margin-right: 15px;
+}
+
+#quantityDiv {
+  display: flex;
+  align-items: center;
+}
+
+#quantitySelect {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  margin-left: 18px;
+  font-size: 15px;
+  text-indent: 8px;
+  border-radius: 5px;
+}
+
+#prodPrice {
+  font-size: 20px;
+}
+
+#adminList {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  z-index: 10;
+}
+
+#adminProductList img {
+  max-height: 50px;
+}
+
+#addProduct {
+  visibility: hidden;
+}
+
+#cartHeader {
+  margin-left: 30px;
+}
+
+#cartSummary {
+  line-height: 80%;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

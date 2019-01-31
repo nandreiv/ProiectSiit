@@ -1,0 +1,29 @@
+[{
+    "imagine": "https://assets.pcmag.com/media/images/325753-apple-macbook-air-13-inch-mid-2013.jpg",
+    "nume": "Macbook Air 13",
+    "descriere": "Cel mai popular model Macbook",
+    "pret": 900,
+    "cantitate": 50
+  },
+  {
+    "imagine": "https://switch.com.my/wp-content/uploads/2017/11/iphonex_spacegray.png",
+    "nume": "iPhone X",
+    "descriere": "Cel mai nou model iPhone",
+    "pret": 900,
+    "cantitate": 50
+  },
+  {
+    "imagine": "https://www.marshallheadphones.com/media/catalog/product/m/a/marshall_majoriibt_brown_square_t_1.png",
+    "nume": "Marshall Major II",
+    "descriere": "Casti premium la pret accesibil",
+    "pret": 80,
+    "cantitate": 100
+  },
+  {
+    "imagine": "https://compass-ssl.xbox.com/assets/f5/96/f5967de6-59db-4af0-80cf-461c03052eff.png?n=Results-Page_Page-Hero-0_X1S_1083x612.png",
+    "nume": "XBox One",
+    "descriere": "Consola XBox One White",
+    "pret": 60,
+    "cantitate": 80
+  }
+]
